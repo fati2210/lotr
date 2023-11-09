@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>The Lord of the Rings</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-camera-movie'></i>
+            <div class="logo-name"><span>Lord</span>/Rings</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="part1/The_Fellowship_of_the_Ring.html"><i class='bx bx-slideshow'></i>Part 1</a></li>
+            <li><a href="part2/The_Two_Towers.html"><i class='bx bx-slideshow'></i>Part 2</a></li>
+            <li><a href="part3/The_Return_of_the_King.html"><i class='bx bx-film'></i>Part 3</a></li>
+            <li class="active"><a href="#"><i class='bx bx-map-alt'></i>Analytics</a></li>
+            <li><a href="books/books.html"><i class='bx bx-book'></i>Books</a></li>
+            <li><a href="snake/snake.html"><i class='bx bx-game'></i>Snake</a></li>
+            <li><a href="developers/developers.html"><i class='bx bx-group'></i>Developers</a></li>
+            <li><a href="quest/mainquest.html"><i class='bx bx-group'></i>Quest</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="https://i.pinimg.com/originals/4f/22/87/4f228760e41f20cb2c55495ae492b37b.gif" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class="bx bx-menu"></i>
+            <form action="#">
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="https://www.nytimes.com/" class="notif">
+                <i class="bx bx-bell"></i>
+                <span class="count" id="notif">0</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/icon2.png" alt="">
+            </a>
+
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>The Lord of the Rings</h1>
+                    <ul class="breadcrumb">
+                        <button type="button" id="booksbut" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                            <a href="books/books.html">Books</a>
+                        </button>
+                        <button type="button" id="moviesbut" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                            <a href="#movies">Movies</a>
+                        </button>
+
+                    </ul>
+                </div>
+                <a href="https://www.kinopoisk.ru/film/328/video/type/1/?ysclid=lo3d0ymdnf730048783" class="report">
+                    <i class='bx bx-movie' ></i>
+                    <span>watch the trailer</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            5,613M
+                        </h3>
+                        <p>VOTES</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            558MIN
+                        </h3>
+                        <p>DURATION</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            6-14
+                        </h3>
+                        <p>KINOPOISK TOP</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            $1035,94M
+                        </h3>
+                        <p>GROSS</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data" id="movies">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Parts</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><i class='bx bx-downvote' ></i></th>
+                                <th>Release Date</th>
+                                <th>IMDb Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/1.jpg" alt="">
+                                    <p>The Lord of the Rings: The Fellowship of the Ring</p>
+                                </td>
+                                <td>2001</td>
+                                <td><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 88%; background-color: green;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">8.8/10</div>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/2.jpg" alt="">
+                                    <p>The Lord of the Rings: The Two Towers</p>
+                                </td>
+                                <td>2002</td>
+                                <td><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 88%; background-color: orange;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">8.8/10</div>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/3.jpg" alt="">
+                                    <p>The Lord of the Rings: The Return of the King</p>
+                                </td>
+                                <td>2003</td>
+                                <td><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%; background-color: brown;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">9/10</div>
+                                </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Interesting Facts</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>The Beatles wanted to make a film "The Lord of the Rings" with their participation in the leading roles, but Tolkien did not like this idea.</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>More than 2,000 weapons and 10,000 arrows were created for the filming of the trilogy.</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Christopher Lee (Saruman) first met J. R. R. Tolkien in an Oxford bar where both were drinking.</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!-- End of Reminders-->
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
