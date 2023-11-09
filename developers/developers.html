@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="developers.css">
+    <title>The Lord of the Rings</title>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a href="#" class="logo">
+        <i class='bx bx-camera-movie'></i>
+        <div class="logo-name"><span>Lord</span>/Rings</div>
+    </a>
+    <ul class="side-menu">
+        <li><a href="../part1/The_Fellowship_of_the_Ring.html"><i class='bx bx-slideshow'></i>Part 1</a></li>
+        <li><a href="../part2/The_Two_Towers.html"><i class='bx bx-slideshow'></i>Part 2</a></li>
+        <li><a href="../part3/The_Return_of_the_King.html"><i class='bx bx-film'></i>Part 3</a></li>
+        <li><a href="../index.html"><i class='bx bx-map-alt'></i>Analytics</a></li>
+        <li><a href="../books/books.html"><i class='bx bx-book'></i>Books</a></li>
+        <li><a href="../snake/snake.html"><i class='bx bx-game'></i>Snake</a></li>
+        <li class="active"><a href="#"><i class='bx bx-group'></i>Developers</a></li>
+
+        <li><a href="quest/mainquest.html"><i class='bx bx-group'></i>Quest</a></li>
+    </ul>
+    <ul class="side-menu">
+        <li>
+            <a href="https://i.pinimg.com/originals/4f/22/87/4f228760e41f20cb2c55495ae492b37b.gif" class="logout">
+                <i class='bx bx-log-out-circle'></i>
+                Logout
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- End of Sidebar -->
+
+<!-- Main Content -->
+<div class="content">
+    <!-- Navbar -->
+    <nav>
+        <i class='bx bx-menu'></i>
+        <form action="#">
+
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden>
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="https://www.nytimes.com/" class="notif">
+            <i class='bx bx-bell'></i>
+            <span class="count">31</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="../images/icon2.png" alt="">
+        </a>
+    </nav>
+
+    <!-- End of Navbar -->
+
+    <main>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="img/toast.jpg" class="rounded me-2 smaller-image" alt="">
+                <strong class="me-auto">The Lord of the rings</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello,The Lord of the rings fan!We are glad to see yall:)
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var myToast = new bootstrap.Toast(document.querySelector('.toast'));
+                myToast.show();
+            });
+        </script>
+
+
+        <div class="container mx-auto" style="min-height: 100vh;">
+            <div class="card mx-auto mt-4" style="width: 18rem;">
+                <img src="img/bigmaga.jpg" class="card-img-top" style="height: 300px;">
+                <div class="card-body">
+                    <p class="card-text"> Magzhan Omirzak </p>
+                </div>
+            </div>
+
+            <!-- Additional Cards -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mt-4" style="width: 18rem;">
+                            <img src="img/lilmag.jpg" class="card-img-top" style="height: 300px;">
+                            <div class="card-body">
+                                <p class="card-text">Magzhan Shynykul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mt-4" style="width: 18rem;">
+                            <img src="img/phati.jpg" class="card-img-top" style="height: 300px;">
+                            <div class="card-body">
+                                <p class="card-text">Fatima Mustafa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mt-4" style="width: 18rem;">
+                            <img src="img/dila.jpg" class="card-img-top" style="height: 300px;">
+                            <div class="card-body">
+                                <p class="card-text">Dilnaz Zhumagaliyeva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mt-4" style="width: 18rem;">
+                            <img src="img/sullaa.jpg" class="card-img-top" style="height: 300px;">
+                            <div class="card-body">
+                                <p class="card-text">Sultan Tokan</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+
+        <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="movieModalLabel">Movie Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="movieModalBody">
+                        Movie Description Here
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; The best group </p>
+        </footer>
+
+
+    </main>
+
+</div>
+
+<script src="developers.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
